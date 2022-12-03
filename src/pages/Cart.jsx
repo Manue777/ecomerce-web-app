@@ -11,7 +11,7 @@ const Cart = () => {
     "flex-auto flex flex-col justify-center items-center mobile:mt-7 mobile:mb-7";
   return (
     <div>
-      <Annoucne />
+      <Announce />
       <Navbar />
       <div className="p-3">
         <div className="flex justify-center text-5xl">Cart</div>

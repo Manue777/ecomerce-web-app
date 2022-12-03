@@ -43,7 +43,7 @@ function  ProductPage () {
               rounded-full border-2 p-[10x] cursor-poniter ml-5
               hover: border-[#8a4af3]">
               </div>
-            <div>
+            </div>
 
             <div className="mt-7 text-2xl">
               Size
@@ -58,17 +58,15 @@ function  ProductPage () {
             <div className="mt-7">
               <Counter />
             </div>
-            </div>
-            <button className="text-white bg-[#8a4af3] rounded-md shadow-md mt-[30px] p-3">
+          </div>
+          <button className="text-white bg-[#8a4af3] rounded-md shadow-md mt-[30px] p-3">
             Add to Cart
-            </button>
+          </button>
         </div>
       </div>
       <NewsLetter />
       <Footer />
-      </div>
     </div>
-  </div>
 };
 
 export default ProductPage;
