@@ -1,13 +1,16 @@
 import { EmailOutlined, Facebook, Instagram, LocalPhoneOutlined, LocationOnOutlined, Phone, Pinterest, Twitter } from "@mui/icons-material";
 import React from "react";
 
-const Footer = () => {
+function  Footer () {
     const socialStyle = 'm-3 rounded-full cursor-pointer p-2 text-white';
-  return (
 
+  return (
     <div className="flex items-center justify-around p-2 mobile:flex-col mobile:items-start">
       <div className="flex-1 flex flex-col flex-wrap p-2">
-        <h1 className="text-[25px]">ZAINKEEPSCODE</h1>
+        {/*store information*/}
+        <h1 className="text-[25px]">
+          MANUELEGAS
+        </h1>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem
           soluta quis porro eveniet. Nulla modi, quas unde eaque vel, quaerat
@@ -38,11 +41,11 @@ const Footer = () => {
         </div>
         <div className="flex m-3">
             <LocalPhoneOutlined className="text-[#521da8]"/>
-            <p className='pl-3'>+92 12345678</p>
+            <p className='pl-3'>+51 970445747</p>
         </div>
         <div className="flex m-3">
             <EmailOutlined className="text-[#8a4af3]"/>
-            <p className='pl-3'>Ahmadroa925@gmail.com</p>
+            <p className='pl-3'>lejeune.manu@gmail.com</p>
         </div>
       </div>
     </div>
