@@ -2,15 +2,19 @@ import { ArrowLeftOutlined, ArrowRightOutlined } from "@mui/icons-material";
 import React, { useEffect, useState } from "react";
 import "./Slider.css";
 import {ApiSlides} from '../componentApi/SliderApi';
-const Slider = () => {
+
+function Slider ()  {
+
+  // useState hooks
+  const [slides] = useState(ApiSlides);
+  const [activeSlide, setActiveSlide] = useState(0);
+
   // Styles
   const slideStyle = "slide flex items-center justify-center h-[100%]";
   const arrowStyle =
     "rounded-full bg-grey flex justify-center items-center shadow-md hover:cursor-pointer";
 
-  //States
-  const [slides] = useState(ApiSlides);
-  const [activeSlide, setActiveSlide] = useState(0);
+  
 
   const prevSlide = () => {
     if (activeSlide === 0) {
@@ -28,17 +32,18 @@ const Slider = () => {
   };
   return (
     <div className="slider h-[540px] bg-white flex items-center justify-between mobile:hidden">
-      {/* left Arrow */}
+      {/* left Arrow div*/}
       <div className={arrowStyle} onClick={prevSlide}>
         <ArrowLeftOutlined style={{ fontSize: "50px" }} />
       </div>
 
-      {/* Slide */}
+      {/* Slide div*/}
 
       {slides.map((slide, index) => {
         if (index === activeSlide) {
           return (
-            <div className={`wrapper flex w-[100%] h-[500px] items-center justify-center shadow-2xl rounded-lg border-[#c0c0c0] border-10px overflow-hidden relative` + slide.background} key={index}>
+            <div className={`wrapper flex w-[100%] h-[500px] items-center justify-center 
+            shadow-2xl rounded-lg border-[#c0c0c0] border-10px overflow-hidden relative` + slide.background} key={index}>
               <div className={slideStyle}>
                 <div className="flex-1 flex justify-center items-center h-[100%]">
                 <img
@@ -59,7 +64,8 @@ const Slider = () => {
           );
         }
       })}
-      {/* Right Arrow */}
+
+      {/* Right Arrow div*/}
 
       <div className={arrowStyle} onClick={nextSlide}>
         <ArrowRightOutlined style={{ fontSize: "50px" }} />
