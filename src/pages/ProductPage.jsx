@@ -6,11 +6,11 @@ import NewsLetter from "../components/NewsLetter";
 import Counter from "../components/Counter";
 
 function  ProductPage () {
-  return (
+  return 
     <div>
       <Announce />
       <Navbar />
-      <div className="flex justify-center mobile:flex-col mobile:mt-4 mobile:p-3">
+    <div className="flex justify-center mobile:flex-col mobile:mt-4 mobile:p-3">
         <div className="flex-1 flex items-center justify-center">
           <img
             src="https://cdn.shopify.com/s/files/1/0240/7285/products/KNITPULLOVER-PISTACHIO-2_360x.jpg?v=1642545216"
@@ -58,16 +58,17 @@ function  ProductPage () {
             <div className="mt-7">
               <Counter />
             </div>
-          </div>
-          <button className="text-white bg-[#8a4af3] rounded-md shadow-md mt-[30px] p-3">
+            </div>
+            <button className="text-white bg-[#8a4af3] rounded-md shadow-md mt-[30px] p-3">
             Add to Cart
-          </button>
+            </button>
         </div>
       </div>
       <NewsLetter />
       <Footer />
+      </div>
     </div>
-  );
+  </div>
 };
 
 export default ProductPage;
