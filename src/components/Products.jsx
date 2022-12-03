@@ -1,7 +1,8 @@
 import React from 'react';
 import { ApiTopPropduct } from '../componentApi/TopProductsApi';
 import Product from './Product';
-const Products = () => {
+
+function Products ()  {
   return <div className='p-5 flex flex-wrap'>
       {
           ApiTopPropduct.map((product, index)=>(
