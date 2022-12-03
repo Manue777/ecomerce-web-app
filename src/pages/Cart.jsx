@@ -1,5 +1,5 @@
 import React from "react";
-import Annoucne from "../components/Annoucne";
+import Announce from "../components/Announce";
 import Navbar from "../components/Navbar";
 import NewsLetter from "../components/NewsLetter";
 import Footer from "../components/Footer";
