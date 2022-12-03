@@ -14,7 +14,6 @@ function Slider ()  {
   const arrowStyle =
     "rounded-full bg-grey flex justify-center items-center shadow-md hover:cursor-pointer";
 
-  
 
   const prevSlide = () => {
     if (activeSlide === 0) {
