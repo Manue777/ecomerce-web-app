@@ -5,7 +5,7 @@ export default class Login extends Component {
   inputStyle =
     "border-[2px] border-silver rounded-lg outline-[#8a4af3] p-2 focus:border-[#8a4af3] ease-linear duration-200 ";
 
-  //states
+  //statesººº
   state = {
     email: "",
     pass: "",

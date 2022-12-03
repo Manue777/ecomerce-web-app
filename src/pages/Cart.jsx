@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 import NewsLetter from "../components/NewsLetter";
 import Footer from "../components/Footer";
 import Counter from "../components/Counter";
-const Cart = () => {
+function Cart ()  {
   const SummaryItemStyle = "SummaryItem flex justify-between mt-3 w-[100%]";
   const ProductDivStyle = "flex w-[100%] h-auto items-center mobile:flex-col";
   const PriceQuantityStyle =
@@ -105,7 +105,7 @@ const Cart = () => {
             <hr className="mb-7 mt-7 mobile:mt-0" />
 
             {/* 3rd Product */}
-            <div className={ProductDivStyle}>
+            <div className={ProductDiººººººvStyle}>
               <div className=" product flex pl-5 self-start">
                 <img
                   className="product_img w-[7rem]"
